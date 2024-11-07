@@ -1,0 +1,982 @@
+
+{% extends 'myapp/base.html' %}
+{% load static %}
+{% block content %}
+<!-- about-us start -->
+<section id="home" class="about-us" style="background-image: url('{% static 'images/hero-bg.png' %}');">
+    <div class="container">
+        <div class="about-us-content">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="single-about-us">
+                        <div class="about-us-txt">
+                            <h2>
+                                Explore the Beauty of the Beautiful World
+                            </h2>
+                            {# Uncomment this if you want to include the button #}
+                             {% comment %} <div class="about-btn">
+                                <button class="about-view">
+                                    explore now
+                                </button>
+                            </div>  {% endcomment %}
+                        </div><!-- /.about-us-txt -->
+                    </div><!-- /.single-about-us -->
+                </div><!-- /.col -->
+                <div class="col-sm-0">
+                    <div class="single-about-us">
+                        <!-- Additional content can go here if needed -->
+                    </div><!-- /.single-about-us -->
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.about-us-content -->
+    </div><!-- /.container -->
+</section><!-- /.about-us -->
+<!-- about-us end -->
+
+{% comment %} 2 section {% endcomment %}
+ <!--travel-box start-->
+<section  class="travel-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="single-travel-boxes">
+                    <div id="desc-tabs" class="desc-tabs">
+
+                        <ul class="nav nav-tabs" role="tablist">
+
+                            <li role="presentation" class="active">
+                                 <a href="#tours" aria-controls="tours" role="tab" data-toggle="tab">
+                                    <i class="fa fa-car"></i>
+                                    Car hire
+                                 </a>
+                            </li>
+
+                            <li role="presentation">
+                                <a href="#hotels" aria-controls="hotels" role="tab" data-toggle="tab">
+                                    <i class="fa fa-building"></i>
+                                    Accomodation
+                                </a>
+                            </li>
+
+                            <li role="presentation">
+                                 <a href="#flights" aria-controls="flights" role="tab" data-toggle="tab">
+                                     <i class="fa fa-plane"></i>
+                                     flights
+                                 </a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+
+                            <div role="tabpanel" class="tab-pane active fade in" id="tours">
+                                <div class="tab-para">
+
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <div class="single-tab-select-box">
+
+                                                <h2>destination</h2>
+
+                                                <div class="travel-select-icon">
+                                                    <select class="form-control ">
+
+                                                          <option value="default">enter your Location</option><!-- /.option-->
+
+                                                          <option value="turkey">Tanzania</option><!-- /.option-->
+
+                                                          <option value="russia">other</option><!-- /.option-->
+                                                          
+                                                           {# <option value="egept">egypt</option><!-- /.option--> #}
+
+
+                                                    </select><!-- /.select-->
+                                                </div><!-- /.travel-select-icon -->
+
+                                                <div class="travel-select-icon">
+                                                    <select class="form-control ">
+
+                                                          <option value="default">enter your destination </option><!-- /.option-->
+
+                                                          <option value="istambul">Tanzania</option><!-- /.option-->
+
+                                                          <option value="mosko">other</option><!-- /.option-->
+                                                            {# <option value="egept">egypt</option><!-- /.option--> #}
+
+                                                    </select><!-- /.select-->
+                                                </div><!-- /.travel-select-icon -->
+
+                                            </div><!--/.single-tab-select-box-->
+                                        </div><!--/.col-->
+
+                                        <div class="col-lg-2 col-md-3 col-sm-4">
+                                            <div class="single-tab-select-box">
+                                                <h2>check in</h2>
+                                                <div class="travel-check-icon">
+                                                    <form action="#">
+                                                        <input type="text" name="check_in" class="form-control" data-toggle="datepicker" placeholder="pick date ">
+                                                    </form>
+                                                </div><!-- /.travel-check-icon -->
+                                            </div><!--/.single-tab-select-box-->
+                                        </div><!--/.col-->
+
+                                        <div class="col-lg-2 col-md-3 col-sm-4">
+                                            <div class="single-tab-select-box">
+                                                <h2>check out</h2>
+                                                <div class="travel-check-icon">
+                                                    <form action="#">
+                                                        <input type="text" name="check_out" class="form-control"  data-toggle="datepicker" placeholder="pick date ">
+                                                    </form>
+                                                </div><!-- /.travel-check-icon -->
+                                            </div><!--/.single-tab-select-box-->
+                                        </div><!--/.col-->
+
+                                        <div class="col-lg-2 col-md-1 col-sm-4">
+                                            <div class="single-tab-select-box">
+                                                <h2>duration</h2>
+                                                <div class="travel-select-icon">
+                                                    <select class="form-control ">
+
+                                                          <option value="default">5</option><!-- /.option-->
+
+                                                          <option value="10">10</option><!-- /.option-->
+
+                                                          <option value="15">15</option><!-- /.option-->
+                                                          <option value="20">20</option><!-- /.option-->
+
+                                                    </select><!-- /.select-->
+                                                </div><!-- /.travel-select-icon -->
+                                            </div><!--/.single-tab-select-box-->
+                                        </div><!--/.col-->
+
+                                        <div class="col-lg-2 col-md-1 col-sm-4">
+                                            <div class="single-tab-select-box">
+                                                <h2>members</h2>
+                                                <div class="travel-select-icon">
+                                                    <select class="form-control ">
+
+                                                          <option value="default">1</option><!-- /.option-->
+
+                                                          <option value="2">2</option><!-- /.option-->
+
+                                                          <option value="4">4</option><!-- /.option-->
+                                                          <option value="8">8</option><!-- /.option-->
+
+                                                    </select><!-- /.select-->
+                                                </div><!-- /.travel-select-icon -->
+                                            </div><!--/.single-tab-select-box-->
+                                        </div><!--/.col-->
+
+                                    </div><!--/.row-->
+
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="travel-budget">
+                                                <div class="row">
+                                                    <div class="col-md-3 col-sm-4">
+                                                        <h3>budget : </h3>
+                                                    </div><!--/.col-->
+                                                    <div class="co-md-9 col-sm-8">
+                                                        <div class="travel-filter">
+                                                            <div class="info_widget">
+                                                                <div class="price_filter">
+                                                                    
+                                                                    <div id="slider-range"></div><!--/.slider-range-->
+
+                                                                    <div class="price_slider_amount">
+                                                                        <input type="text" id="amount" name="price"  placeholder="Add Your Price" />
+                                                                    </div><!--/.price_slider_amount-->
+                                                                </div><!--/.price-filter-->
+                                                            </div><!--/.info_widget-->
+                                                        </div><!--/.travel-filter-->
+                                                    </div><!--/.col-->
+                                                </div><!--/.row-->
+                                            </div><!--/.travel-budget-->
+                                        </div><!--/.col-->
+                                        <div class="clo-sm-7">
+                                            <div class="about-btn travel-mrt-0 pull-right">
+                                                <a href="/construction">
+                                                    <button  class="about-view travel-btn">
+                                                        search	
+                                                    </button><!--/.travel-btn-->
+                                                </a>
+                                            </div><!--/.about-btn-->
+                                        </div><!--/.col-->
+
+                                    </div><!--/.row-->
+
+                                </div><!--/.tab-para-->
+
+                            </div><!--/.tabpannel-->
+
+                            <div role="tabpanel" class="tab-pane fade in" id="hotels">
+                                <div class="tab-para">
+
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <div class="single-tab-select-box">
+
+                                                <h2>destination</h2>
+
+                                                <div class="travel-select-icon">
+                                                    <select class="form-control ">
+
+                                                          <option value="default">enter your destination country</option><!-- /.option-->
+
+                                                          <option value="turkey">tanzania</option><!-- /.option-->
+
+                                                          <option value="russia">other</option><!-- /.option-->
+                                                         
+                                                            {# <option value="egept">egypt</option><!-- /.option--> #}
+
+                                                    </select><!-- /.select-->
+                                                </div><!-- /.travel-select-icon -->
+
+                                                <div class="travel-select-icon">
+                                                    <select class="form-control ">
+
+                                                          <option value="default">enter your destination location</option><!-- /.option-->
+
+                                                          <option value="istambul">tanzania</option><!-- /.option-->
+
+                                                          <option value="mosko">other</option><!-- /.option-->
+                                                          
+                                                            {# <option value="egept">egypt</option><!-- /.option--> #}
+
+                                                    </select><!-- /.select-->
+                                                </div><!-- /.travel-select-icon -->
+
+                                            </div><!--/.single-tab-select-box-->
+                                        </div><!--/.col-->
+
+                                        <div class="col-lg-2 col-md-3 col-sm-4">
+                                            <div class="single-tab-select-box">
+                                                <h2>check in</h2>
+                                                <div class="travel-check-icon">
+                                                    <form action="#">
+                                                        <input type="text" name="check_in" class="form-control" data-toggle="datepicker" placeholder="pick date ">
+                                                    </form>
+                                                </div><!-- /.travel-check-icon -->
+                                            </div><!--/.single-tab-select-box-->
+                                        </div><!--/.col-->
+
+                                        <div class="col-lg-2 col-md-3 col-sm-4">
+                                            <div class="single-tab-select-box">
+                                                <h2>check out</h2>
+                                                <div class="travel-check-icon">
+                                                    <form action="#">
+                                                        <input type="text" name="check_out" class="form-control"  data-toggle="datepicker" placeholder="pick date">
+                                                    </form>
+                                                </div><!-- /.travel-check-icon -->
+                                            </div><!--/.single-tab-select-box-->
+                                        </div><!--/.col-->
+
+                                        <div class="col-lg-2 col-md-1 col-sm-4">
+                                            <div class="single-tab-select-box">
+                                                <h2>duration</h2>
+                                                <div class="travel-select-icon">
+                                                    <select class="form-control ">
+
+                                                          <option value="default">5</option><!-- /.option-->
+
+                                                          <option value="10">10</option><!-- /.option-->
+
+                                                          <option value="15">15</option><!-- /.option-->
+                                                          <option value="20">20</option><!-- /.option-->
+
+                                                    </select><!-- /.select-->
+                                                </div><!-- /.travel-select-icon -->
+                                            </div><!--/.single-tab-select-box-->
+                                        </div><!--/.col-->
+
+                                        <div class="col-lg-2 col-md-1 col-sm-4">
+                                            <div class="single-tab-select-box">
+                                                <h2>members</h2>
+                                                <div class="travel-select-icon">
+                                                    <select class="form-control ">
+
+                                                          <option value="default">1</option><!-- /.option-->
+
+                                                          <option value="2">2</option><!-- /.option-->
+
+                                                          <option value="4">4</option><!-- /.option-->
+                                                          <option value="8">8</option><!-- /.option-->
+
+                                                    </select><!-- /.select-->
+                                                </div><!-- /.travel-select-icon -->
+                                            </div><!--/.single-tab-select-box-->
+                                        </div><!--/.col-->
+
+                                    </div><!--/.row-->
+
+                                    <div class="row">
+                                        <div class="col-sm-5"></div><!--/.col-->
+                                        <div class="clo-sm-7">
+                                            <div class="about-btn travel-mrt-0 pull-right">
+                                                <a href="/construction">
+                                                    <button  class="about-view travel-btn">
+                                                        search	
+                                                    </button><!--/.travel-btn-->
+                                                </a>
+                                            </div><!--/.about-btn-->
+                                        </div><!--/.col-->
+
+                                    </div><!--/.row-->
+
+                                </div><!--/.tab-para-->
+
+                            </div><!--/.tabpannel-->
+
+                            <div role="tabpanel" class="tab-pane fade in" id="flights">
+                                <div class="tab-para">
+                                    <div class="trip-circle">
+                                        <div class="single-trip-circle">
+                                            <input type="radio" id="radio01" name="radio" />
+                                              <label for="radio01">
+                                                  <span class="round-boarder">
+                                                      <span class="round-boarder1"></span>
+                                                  </span>round trip
+                                              </label>
+                                        </div><!--/.single-trip-circle-->
+                                        <div class="single-trip-circle">
+                                            <input type="radio" id="radio02" name="radio" />
+                                              <label for="radio02">
+                                                  <span class="round-boarder">
+                                                      <span class="round-boarder1"></span>
+                                                  </span>one way
+                                              </label>
+                                        </div><!--/.single-trip-circle-->
+                                    </div><!--/.trip-circle-->
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <div class="single-tab-select-box">
+
+                                                <h2>from</h2>
+
+                                                <div class="travel-select-icon">
+                                                    <select class="form-control ">
+
+                                                          <option value="default">enter your location</option><!-- /.option-->
+
+                                                          <option value="turkey">Dar es salaam</option><!-- /.option-->
+
+                                                          <option value="russia">Arusha</option><!-- /.option-->
+                                                          <option value="egept">Zanzibar</option><!-- /.option-->
+
+                                                    </select><!-- /.select-->
+                                                </div><!-- /.travel-select-icon -->
+                                            </div><!--/.single-tab-select-box-->
+                                        </div><!--/.col-->
+
+                                        <div class="col-lg-2 col-md-3 col-sm-4">
+                                            <div class="single-tab-select-box">
+                                                <h2>departure</h2>
+                                                <div class="travel-check-icon">
+                                                    <form action="#">
+                                                        <input type="text" name="departure" class="form-control" data-toggle="datepicker"
+                                                        placeholder="12 -01 - 2017 ">
+                                                    </form>
+                                                </div><!-- /.travel-check-icon -->
+                                            </div><!--/.single-tab-select-box-->
+                                        </div><!--/.col-->
+
+                                        <div class="col-lg-2 col-md-3 col-sm-4">
+                                            <div class="single-tab-select-box">
+                                                <h2>return</h2>
+                                                <div class="travel-check-icon">
+                                                    <form action="#">
+                                                        <input type="text" name="return" class="form-control" data-toggle="datepicker" placeholder="22 -01 - 2017 ">
+                                                    </form>
+                                                </div><!-- /.travel-check-icon -->
+                                            </div><!--/.single-tab-select-box-->
+                                        </div><!--/.col-->
+
+                                        <div class="col-lg-2 col-md-1 col-sm-4">
+                                            <div class="single-tab-select-box">
+                                                <h2>adults</h2>
+                                                <div class="travel-select-icon">
+                                                    <select class="form-control ">
+
+                                                          <option value="default">5</option><!-- /.option-->
+
+                                                          <option value="10">10</option><!-- /.option-->
+
+                                                          <option value="15">15</option><!-- /.option-->
+                                                          <option value="20">20</option><!-- /.option-->
+
+                                                    </select><!-- /.select-->
+                                                </div><!-- /.travel-select-icon -->
+                                            </div><!--/.single-tab-select-box-->
+                                        </div><!--/.col-->
+
+                                        <div class="col-lg-2 col-md-1 col-sm-4">
+                                            <div class="single-tab-select-box">
+                                                <h2>childs</h2>
+                                                <div class="travel-select-icon">
+                                                    <select class="form-control ">
+
+                                                          <option value="default">1</option><!-- /.option-->
+
+                                                          <option value="2">2</option><!-- /.option-->
+
+                                                          <option value="4">4</option><!-- /.option-->
+                                                          <option value="8">8</option><!-- /.option-->
+
+                                                    </select><!-- /.select-->
+                                                </div><!-- /.travel-select-icon -->
+                                            </div><!--/.single-tab-select-box-->
+                                        </div><!--/.col-->
+
+                                    </div><!--/.row-->
+
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <div class="single-tab-select-box">
+
+                                                <h2>to</h2>
+
+                                                <div class="travel-select-icon">
+                                                    <select class="form-control ">
+
+                                                          <option value="default">enter your destination location</option><!-- /.option-->
+
+                                                          <option value="istambul">Dar es salaam</option><!-- /.option-->
+
+                                                          <option value="mosko">Arusha</option><!-- /.option-->
+                                                          <option value="cairo">Zanzibar</option><!-- /.option-->
+
+                                                    </select><!-- /.select-->
+                                                </div><!-- /.travel-select-icon -->
+
+                                            </div><!--/.single-tab-select-box-->
+                                        </div><!--/.col-->
+                                        <div class="col-lg-3 col-md-3 col-sm-4">
+                                            <div class="single-tab-select-box">
+
+                                                <h2>class</h2>
+                                                <div class="travel-select-icon">
+                                                    <select class="form-control ">
+
+                                                          <option value="default">enter class</option><!-- /.option-->
+
+                                                          <option value="A">A</option><!-- /.option-->
+
+                                                          <option value="B">B</option><!-- /.option-->
+                                                          <option value="C">C</option><!-- /.option-->
+
+                                                    </select><!-- /.select-->
+                                                </div><!-- /.travel-select-icon -->
+                                            </div><!--/.single-tab-select-box-->
+                                        </div><!--/.col-->
+                                        <div class="clo-sm-5">
+                                            <div class="about-btn pull-right">
+                                                <a href="/construction">
+                                                    <button  class="about-view travel-btn">
+                                                        search	
+                                                    </button><!--/.travel-btn-->
+                                                </a>
+                                            </div><!--/.about-btn-->
+                                        </div><!--/.col-->
+                                        
+                                    </div><!--/.row-->
+
+                                </div>
+
+                            </div><!--/.tabpannel-->
+
+                        </div><!--/.tab content-->
+                    </div><!--/.desc-tabs-->
+                </div><!--/.single-travel-box-->
+            </div><!--/.col-->
+        </div><!--/.row-->
+    </div><!--/.container-->
+
+</section><!--/.travel-box-->
+<!--travel-box end-->
+
+
+<!--service start-->
+<section id="service" class="service">
+    <div class="container">
+
+        <div class="service-counter text-center">
+
+            <div class="col-md-4 col-sm-4">
+                <div class="single-service-box">
+                    <div class="service-img">
+                        <img src="{% static 'images/service/s1.png' %}" alt="service-icon" />
+                    </div><!--/.service-img-->
+                    <div class="service-content">
+                        <h2>
+                            <a href="#">
+                                Car rental/hire
+                            </a>
+                        </h2>
+                        <p>Enjoy the freedom of the open road with our affordable car rental services, perfect for your next adventure!</p>
+                    </div><!--/.service-content-->
+                </div><!--/.single-service-box-->
+            </div><!--/.col-->
+
+            <div class="col-md-4 col-sm-4">
+                <div class="single-service-box">
+                    <div class="service-img">
+                        <img src="{% static 'images/service/s2.png' %}" alt="service-icon" />
+                    </div><!--/.service-img-->
+                    <div class="service-content">
+                        <h2>
+                            <a href="#">
+                                Book top-class hotel
+                            </a>
+                        </h2>
+                        <p>All arrangements for tourism accommodations, safari, fees, and charges.</p>
+                    </div><!--/.service-content-->
+                </div><!--/.single-service-box-->
+            </div><!--/.col-->
+
+            <div class="col-md-4 col-sm-4">
+                <div class="single-service-box">
+                    <div class="service-img">
+                        <img src="{% static 'images/service/s3.png' %}" alt="service-icon" />
+                    </div><!--/.service-img-->
+                    <div class="service-content">
+                        <h2>
+                            <a href="#">
+                                Flight booking
+                            </a>
+                        </h2>
+                        <p>Air ticketing for domestic and international flights.</p>
+                    </div><!--/.service-content-->
+                </div><!--/.single-service-box-->
+            </div><!--/.col-->
+
+        </div><!--/.service-counter-->	
+    </div><!--/.container-->
+
+</section><!--/.service-->
+<!--service end-->
+
+
+
+<!--gallery start-->
+<section id="gallery" class="gallery">
+    <div class="container">
+        <div class="gallery-details">
+            <div class="gallery-header text-center">
+                <h2>
+                    Top Destination
+                </h2>
+                <p>
+                    Exploring the beauty of Tanzania, from the stunning Serengeti plains to the white sands of Zanzibar, is an unforgettable experience!  
+                </p>
+            </div><!--/.gallery-header-->
+            <div class="gallery-box">
+                <div class="gallery-content">
+                      <div class="filtr-container">
+                          <div class="row">
+
+                              <div class="col-md-6">
+                                  <div class="filtr-item">
+                                    <img src="{% static 'images/destination/kilimanjaro.jpg' %}" alt="portfolio image"/>
+                                    <div class="item-title">
+                                        <a href="#">
+                                            Kilimanjaro
+                                        </a>
+                                        <p><span>20 tours</span><span>15 places</span></p>
+                                    </div><!-- /.item-title -->
+                                </div><!-- /.filtr-item -->
+                              </div><!-- /.col -->
+
+                              <div class="col-md-6">
+                                  <div class="filtr-item">
+                                    <img src="{% static 'images/destination/bagamoyo.webp' %}" alt="portfolio image"/>
+                                    <div class="item-title">
+                                        <a href="#">
+                                            Bagamoyo
+                                        </a>
+                                        <p><span>12 tours</span><span>9 places</span></p>
+                                    </div> <!-- /.item-title-->
+                                </div><!-- /.filtr-item -->
+                              </div><!-- /.col -->
+
+                              <div class="col-md-4">
+                                  <div class="filtr-item">
+                                    <img src="{% static 'images/destination/morogoro.jpg' %}" alt="portfolio image"/>
+                                    <div class="item-title">
+                                        <a href="#">
+                                            Morogoro
+                                        </a>
+                                        <p><span>25 tours</span><span>10 places</span></p>
+                                    </div><!-- /.item-title -->
+                                </div><!-- /.filtr-item -->
+                              </div><!-- /.col -->
+
+                              <div class="col-md-4">
+                                  <div class="filtr-item">
+                                    <img src="{% static 'images/destination/mnemba-zanzibar.jpg' %}" alt="portfolio image"/>
+                                    <div class="item-title">
+                                        <a href="#">
+                                           Zanzibar
+                                        </a>
+                                        <p><span>18 tours</span><span>9 places</span></p>
+                                    </div> <!-- /.item-title-->
+                                </div><!-- /.filtr-item -->
+                              </div><!-- /.col -->
+
+                              <div class="col-md-4">
+                                  <div class="filtr-item">
+                                    <img src="{% static 'images/destination/ngorongoro.jpg' %}" alt="portfolio image"/>
+                                    <div class="item-title">
+                                        <a href="#">
+                                           Ngorongoro
+                                        </a>
+                                        <p><span>14 tours</span><span>12 places</span></p>
+                                    </div> <!-- /.item-title-->
+                                </div><!-- /.filtr-item -->
+                              </div><!-- /.col -->
+
+                              <div class="col-md-8">
+                                  <div class="filtr-item">
+                                    <img src="{% static 'images/destination/serengeti.jpg' %}" alt="portfolio image"/>
+                                    <div class="item-title">
+                                        <a href="#">
+                                            Serengeti
+                                        </a>
+                                        <p><span>14 tours</span><span>6 places</span></p>
+                                    </div> <!-- /.item-title-->
+                                </div><!-- /.filtr-item -->
+                              </div><!-- /.col -->
+
+                          </div><!-- /.row -->
+
+                      </div><!-- /.filtr-container-->
+                </div><!-- /.gallery-content -->
+            </div><!--/.gallery-box-->
+        </div><!--/.gallery-details-->
+    </div><!--/.container-->
+
+</section><!--/.gallery-->
+<!--gallery end-->
+
+
+{% comment %} <section id="pack" class="packages">
+    <div class="container">
+        <div class="gallery-header text-center">
+            <h2>Special Packages</h2>
+            <p>Take advantage of our special packages, offering unbeatable deals on curated experiences, accommodations, and exclusive tours tailored to make your trip unforgettable!</p>
+        </div><!--/.gallery-header-->
+
+        <div class="packages-content">
+            <div class="row">
+                {% for package in packages %}
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-package-item">
+                        <img src="{% static package.image %}" alt="{{ package.name }}">
+                        <div class="single-package-item-txt">
+                            <h3>{{ package.name }} <span class="pull-right"></span></h3>
+                            <div class="packages-para">
+                                <p>
+                                    <span><i class="fa fa-angle-right"></i> {{ package.duration }}</span>
+                                    <i class="fa fa-angle-right"></i> {{ package.accommodation }}
+                                </p>
+                                <p>
+                                    <span><i class="fa fa-angle-right"></i> {{ package.transportation }}</span>
+                                    <i class="fa fa-angle-right"></i> Food facilities
+                                </p>
+                            </div><!--/.packages-para-->
+                            <div class="packages-review">
+                                <p>
+                                    {% for star in package.stars %}
+                                    <i class="fa fa-star"></i>
+                                    {% endfor %}
+                                    <span>{{ package.reviews }} review{{ package.reviews|pluralize }}</span>
+                                </p>
+                            </div><!--/.packages-review-->
+                            <div class="about-btn">
+                                <a href="{{ package.url }}">
+                                    <button class="about-view packages-btn">Book Now</button>
+                                </a>
+                            </div><!--/.about-btn-->
+                        </div><!--/.single-package-item-txt-->
+                    </div><!--/.single-package-item-->
+                </div><!--/.col-->
+                {% endfor %}
+            </div><!--/.row-->
+        </div><!--/.packages-content-->
+    </div><!--/.container-->
+</section><!--/.packages--> {% endcomment %}
+
+<!--packages start-->
+<section id="pack" class="packages">
+    <div class="container">
+        <div class="gallary-header text-center">
+            <h2>
+                special packages
+            </h2>
+            <p>
+                Take advantage of our special packages, offering unbeatable deals on curated experiences, accommodations, and exclusive tours tailored to make your trip unforgettable!
+            </p>
+        </div><!--/.gallery-header-->
+        <div class="packages-content">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-package-item">
+                        <img src="{% static 'images/destination/mnemba-zanzibar.jpg'%}" alt="package-place">
+                        <div class="single-package-item-txt">
+                            <h3>Mnemba Island - Zanzibar <span class="pull-right"></span></h3>
+                            <div class="packages-para">
+                                <p>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i> 5 days 6 nights
+                                    </span>
+                                    <i class="fa fa-angle-right"></i> accomodation
+                                </p>
+                                <p>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i>  transportation
+                                    </span>
+                                    <i class="fa fa-angle-right"></i>  food facilities
+                                 </p>
+                            </div><!--/.packages-para-->
+                            <div class="packages-review">
+                                <p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>2544 review</span>
+                                </p>
+                            </div><!--/.packages-review-->
+                            <div class="about-btn">
+                               <a href="/construction">
+                                    <button  class="about-view packages-btn">book now</button>
+                                </a>
+                            </div><!--/.about-btn-->
+                        </div><!--/.single-package-item-txt-->
+                    </div><!--/.single-package-item-->
+
+                </div><!--/.col-->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-package-item">
+                        <img src="{% static 'images/destination/choma.png' %}" alt="package-place">
+                        <div class="single-package-item-txt">
+                            <h3>Choma waterfalls - Morogoro <span class="pull-right"></span></h3>
+                            <div class="packages-para">
+                                <p>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i> 3 days 4 nights
+                                    </span>
+                                    <i class="fa fa-angle-right"></i>  accomodation
+                                </p>
+                                <p>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i> SGR  transportation
+                                    </span>
+                                    <i class="fa fa-angle-right"></i>  food facilities
+                                 </p>
+                            </div><!--/.packages-para-->
+                            <div class="packages-review">
+                                <p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>2544 review</span>
+                                </p>
+                            </div><!--/.packages-review-->
+                            <div class="about-btn">
+                                <a href="/construction">
+                                    <button  class="about-view packages-btn">book now</button>
+                                </a>
+                            </div><!--/.about-btn-->
+                        </div><!--/.single-package-item-txt-->
+                    </div><!--/.single-package-item-->
+
+                </div><!--/.col-->
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-package-item">
+                        <img src="{% static 'images/destination/meserani1.png' %}" alt="package-place">
+                        <div class="single-package-item-txt">
+                            <h3>Meserani Snake Park - Arusha<span class="pull-right"></span></h3>
+                            <div class="packages-para">
+                                <p>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i> 3 days 4 nights
+                                    </span>
+                                    <i class="fa fa-angle-right"></i>  camping
+                                </p>
+                                <p>
+                                    <span>
+                                        <i class="fa fa-angle-right"></i>  transportation
+                                    </span>
+                                    <i class="fa fa-angle-right"></i>  food 
+                                 </p>
+                            </div><!--/.packages-para-->
+                            <div class="packages-review">
+                                <p>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>2544 review</span>
+                                </p>
+                            </div><!--/.packages-review-->
+                            <div class="about-btn">
+                                <a href="/construction">
+                                    <button  class="about-view packages-btn">book now</button>
+                                </a>
+                            </div><!--/.about-btn-->
+                        </div><!--/.single-package-item-txt-->
+                    </div><!--/.single-package-item-->
+
+                </div><!--/.col-->
+                
+              
+            </div><!--/.row-->
+        </div><!--/.packages-content-->
+    </div><!--/.container-->
+
+</section><!--/.packages-->
+<!--packages end-->
+
+
+
+{% comment %} fourth {% endcomment %}
+ <!--blog start-->
+<section id="blog" class="blog">
+    <div class="container">
+        <div class="blog-details">
+                <div class="gallary-header text-center">
+                    <h2>
+                        latest news
+                    </h2>
+                    <p>
+                        Travel News from all over the world 
+                    </p>
+                </div><!--/.gallery-header-->
+                <div class="blog-content">
+                    <div class="row">
+
+                        <div class="col-sm-4 col-md-4">
+                            <div class="thumbnail">
+                                <h2>trending news <span>2024</span></h2>
+                                <div class="thumbnail-img">
+                                    <img src="{% static 'images/destination/news1.jpg' %}" alt="blog-img">
+                                    <div class="thumbnail-img-overlay"></div><!--/.thumbnail-img-overlay-->
+                                
+                                </div><!--/.thumbnail-img-->
+                              
+                                <div class="caption">
+                                    <div class="blog-txt">
+                                        <h3>
+                                            <a href="https://dailynews.co.tz/tanzania-shines-at-global-awards/">
+                                                Tanzania shines at global awards
+                                            </a>
+                                        </h3>
+                                        <p>
+                                            Tanzania claimed double honours, being recognised as Africa’s Leading Destination 2024 while the Tanzania Tourist Board (TTB) was recognised as Africa’s Leading Tourist Board.
+
+                                            The country’s Serengeti National Park continued its dominance, securing the title of Africa’s Leading National Park for the sixth consecutive year, while Mount Kilimanjaro was named Africa’s Leading Tourist Attraction.
+                                        </p>
+                                        <a href="https://dailynews.co.tz/tanzania-shines-at-global-awards/">Read More</a>
+                                    </div><!--/.blog-txt-->
+                                </div><!--/.caption-->
+                            </div><!--/.thumbnail-->
+
+                        </div><!--/.col-->
+
+                        <div class="col-sm-4 col-md-4">
+                            <div class="thumbnail">
+                                <h2>trending news <span>2024</span></h2>
+                                <div class="thumbnail-img">
+                                    <img src="{% static 'images/destination/news2.jpeg' %}" alt="blog-img">
+                                    
+                                    <div class="thumbnail-img-overlay"></div><!--/.thumbnail-img-overlay-->
+                                
+                                </div><!--/.thumbnail-img-->
+                                <div class="caption">
+                                    <div class="blog-txt">
+                                        <h3>
+                                            <a href="https://dailynews.co.tz/royal-tour-strategic-investments-propel-tourism-sector-mwinyi/">
+                                                Royal tour, strategic investments propel tourism sector- Mwinyi
+                                            </a>
+                                        </h3>
+                                        <p>
+                                            ZANZIBAR President, Dr Hussein Mwinyi said yesterday that strong leadership, significant investments and good strategies have driven growth in the tourism sector, largely contributing to the country’s economic development.
+                                            He said the Royal Tour film and other strategies have helped to boost the tourism sector, which plays a big part in the country’s economic growth. 
+                                        </p>
+                                        <a href="https://dailynews.co.tz/royal-tour-strategic-investments-propel-tourism-sector-mwinyi/">Read More</a>
+                                    </div><!--/.blog-txt-->
+                                </div><!--/.caption-->
+                            </div><!--/.thumbnail-->
+
+                        </div><!--/.col-->
+
+                        <div class="col-sm-4 col-md-4">
+                            <div class="thumbnail">
+                                <h2>trending news <span>2024</span></h2>
+                                <div class="thumbnail-img">
+                                    <img src="{% static 'images/destination/news3.jpeg' %}" alt="blog-img">
+                                    
+                                    <div class="thumbnail-img-overlay"></div><!--/.thumbnail-img-overlay-->
+                                
+                                </div><!--/.thumbnail-img-->
+                                <div class="caption">
+                                    <div class="blog-txt">
+                                        <h3><a href="https://dailynews.co.tz/life-changing-experiences-you-can-only-have-in-tanzania/">Life changing experiences you can only have in Tanzania</a></h3>
+                                        <p>
+                                            WITH its amazing combination of wild African animals, tropical beaches, rich history and culture, unique and awe-inspiring experiences, visiting Tanzania will present you with life-changing experiences you will never forget.
+                                            For instance, visiting Lake Natron. Sitting at the lowest point of the Great Rift Valley and believed to be the world’s most caustic body of water, Lake Natron presents some of the most unusual and dramatic scenery in Tanzania.
+
+                                        </p>
+                                        <a href="https://dailynews.co.tz/life-changing-experiences-you-can-only-have-in-tanzania/">Read More</a>
+                                    </div><!--/.blog-txt-->
+                                </div><!--/.caption-->
+                            </div><!--/.thumbnail-->
+
+                        </div><!--/.col-->
+
+                    </div><!--/.row-->
+                </div><!--/.blog-content-->
+            </div><!--/.blog-details-->
+        </div><!--/.container-->
+
+</section><!--/.blog-->
+<!--blog end-->
+
+<!--subscribe start-->
+<section id="subs" class="subscribe">
+    <div class="container">
+        <div class="subscribe-title text-center">
+            <h2>
+                Join our Subscribers List to Get Regular Update
+            </h2>
+            <p>
+                Subscribe Now. We will send you Best offer for your Trip 
+            </p>
+        </div>
+        <form>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                    <div class="custom-input-group">
+                        <input type="email" class="form-control" placeholder="Enter your Email Here">
+                        <button class="appsLand-btn subscribe-btn">Subscribe</button>
+                        <div class="clearfix"></div>
+                        <i class="fa fa-envelope"></i>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+</section>
+<!--subscribe end-->
+
+{% endblock %}
+

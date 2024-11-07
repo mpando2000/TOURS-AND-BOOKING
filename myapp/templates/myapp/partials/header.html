@@ -1,0 +1,45 @@
+<header class="top-area">
+    <div id="sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 78px;">
+        <div class="header-area" style="width: 100%; position: fixed; top: 0px; z-index: inherit;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="logo">
+                        <a href="/">
+                            SUMAJKT<span> Travel and Tour</span>
+                        </a>
+                    </div><!-- /.logo-->
+                </div><!-- /.col-->
+                <div class="col-sm-7">
+                    <div class="main-menu">
+                    
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <i class="fa fa-bars"></i>
+                            </button><!-- / button-->
+                        </div><!-- /.navbar-header-->
+                        <div class="collapse navbar-collapse">		  
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="smooth-menu active"><a href="/">home</a></li>
+                                <li class="smooth-menu"><a href="/#gallery">Destination</a></li>
+                                <li class="smooth-menu"><a href="/#pack">Packages </a></li>
+                                <li class="smooth-menu"><a href="/#blog">blog</a></li>
+                                <li class="smooth-menu"><a href="/#subs">contacts</a></li>
+                                {% comment %} <li class="smooth-menu"><a href="/about">About Us</a></li> {% endcomment %}
+                                <li class="smooth-menu"><a href="{% url 'about' %}">About Us</a></li>
+
+                                <li>
+                                     {% comment %} <button class="book-btn">book now
+                                    </button>  {% endcomment %}
+                                </li><!--/.project-btn--> 
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.main-menu-->
+                </div><!-- /.col-->
+            </div><!-- /.row -->
+            <div class="home-border"></div><!-- /.home-border-->
+        </div><!-- /.container-->
+    </div></div><!-- /.header-area -->
+
+</header>

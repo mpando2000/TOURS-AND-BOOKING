@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <!-- META DATA -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {# Static files (CSS and JS) #}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'myapp/style.css' %}">
+    <link rel="stylesheet" href="{% static 'myapp/app.css' %}">
+    <script src="{% static 'js/app.js' %}"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+
+    
+    <!-- External JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <title>SUMAJKT Travel and Tours</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="{% static 'image/favicon.png' %}"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    {# Django block to allow child templates to insert their content here #}
+   
+
+    
+    {% include 'myapp/partials/header.html' %}  
+   
+    {% block content %}
+    
+    {% endblock %}
+
+    {% include 'myapp/partials/footer.html' %}  
+</body>
+</body>
+
+</html>
